@@ -1,38 +1,87 @@
 .App {
   text-align: center;
+  max-width: 100% !important;
+    overflow-x: hidden !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.openingSection {
+  @apply w-screen h-screen bg-black z-0 relative;
+}
+.heroSection {
+  @apply w-screen h-screen bg-black relative;
+}
+.vidContainer {
+  @apply w-screen h-screen bg-black  overflow-hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.vidText {
+  @apply text-white text-5xl font-bold absolute top-[26rem] w-[100%] -rotate-[30deg];
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.smokeVid {
+  @apply w-[100%] h-screen object-cover object-bottom;
 }
 
-.App-link {
-  color: #61dafb;
+.quote {
+  @apply text-white italic py-80 text-5xl;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modelContainer {
+  @apply fixed z-10 top-0 w-screen h-screen bg-transparent;
+}
+
+
+.windowSection {
+ @apply relative bg-black h-screen;
+}
+
+.imgContainer {
+  @apply relative;
+}
+
+.window-bg {
+  @apply w-[600px] h-auto absolute;
+}
+.window {
+  @apply w-[600px] h-auto absolute;
+}
+
+.cat-standing {
+  @apply w-[200px] h-auto absolute top-[331px] left-[175px] overflow-hidden;
+}
+
+.black-block {
+  @apply w-[200px] h-[265px] absolute top-[340px] left-[164px] bg-black;
+}
+
+.blinds {
+  max-width: 200%;
+  @apply w-[1186px] h-[650px] left-[-290px] top-[-175px] absolute;
+}
+.blinds-scrunch {
+  max-width: 200%;
+  @apply  w-[1186px] h-[650px] left-[-290px] top-[-175px] absolute;
+}
+
+.windowText {
+  float: right;
+  text-align: right;
+  
+@apply text-xl mt-20 leading-10 relative text-white;
+}
+
+.litterSection {
+  @apply h-[90vh] w-screen relative bg-black pt-40
+}
+
+.litterTitle {
+background: #FF5CB3;
+background: linear-gradient(to right, #FF5CB3 0%, #30CF85 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+@apply text-5xl font-bold;
+}
+
+.litterText {
+  @apply text-xl mt-20 relative text-white;
 }
