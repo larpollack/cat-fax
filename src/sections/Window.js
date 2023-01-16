@@ -14,8 +14,8 @@ export const Window = () => {
       scrollTrigger: {
         trigger: ".windowSection",
         start: "top +=400 top",
-        end: "bottom +=500 bottom",
-        markers: true,
+        end: "bottom bottom",
+        // markers: true,
         scrub: true,
       },
     });
@@ -34,7 +34,7 @@ export const Window = () => {
         ".blinds-scrunch",
         {
           duration: 4,
-          y: "-=240",
+          y: "-=230",
           rotation: 0.01,
           force3D: false,
         },

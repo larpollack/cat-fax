@@ -9,6 +9,11 @@ export const Opening = () => {
 
   useLayoutEffect(() => {
     let elem = sectionRef.current;
+    gsap.fromTo(
+      ".quote",
+      { xPercent: 30 },
+      { duration: 3, xPercent: 0, ease: "bounce" }
+    );
 
     let trigger = ScrollTrigger.create({
       trigger: elem,
@@ -24,7 +29,8 @@ export const Opening = () => {
   return (
     <div ref={sectionRef} className="openingSection">
       <div className="quote">
-        In ancient times cats were worshipped as gods. <br />
+        In ancient times cats <br />
+        were worshipped as gods. <br />
         They have not forgotten this.
       </div>
     </div>

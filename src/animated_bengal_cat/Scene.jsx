@@ -26,9 +26,10 @@ export function Model(props) {
       scrollTrigger: {
         trigger: "#cat-model",
         start: "top+=300 top",
-        // markers: true,
-        // end: "bottom+=600 bottom",
-        scrub: 0.3,
+        markers: true,
+        end: "bottom +=1000 bottom",
+        endTrigger: "#glassSection",
+        scrub: true,
       },
     });
 
@@ -36,7 +37,9 @@ export function Model(props) {
       .fromTo(camera.position, { y: 3 }, { y: 0 })
       .to(camera.position, { x: 0 })
 
-      .to(camera.position, { x: -1.5 });
+      .to(camera.position, { x: -1.5 })
+      .to(camera.position, { x: -2.5 })
+      .to(camera.position, { x: 0 });
   }, []);
 
   useEffect(() => {

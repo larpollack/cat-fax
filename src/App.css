@@ -5,7 +5,7 @@
 }
 
 .openingSection {
-  @apply w-screen h-screen bg-black z-0 relative;
+  @apply w-screen h-screen bg-black py-80 z-0 relative;
 }
 .heroSection {
   @apply w-screen h-screen bg-black relative;
@@ -23,7 +23,7 @@
 }
 
 .quote {
-  @apply text-white italic py-80 text-5xl;
+  @apply text-white italic text-5xl border-solid border-white border-2 h-[15rem] w-[44rem] p-10 mx-auto;
 }
 
 .modelContainer {
@@ -32,7 +32,7 @@
 
 
 .windowSection {
- @apply relative bg-black h-screen;
+ @apply relative bg-black h-screen w-screen mb-[-15rem];
 }
 
 .imgContainer {
@@ -67,7 +67,7 @@
   float: right;
   text-align: right;
   
-@apply text-xl mt-20 leading-10 relative text-white;
+@apply text-xl mt-40 leading-10 relative text-white;
 }
 
 .litterSection {
@@ -84,4 +84,94 @@ background: linear-gradient(to right, #FF5CB3 0%, #30CF85 100%);
 
 .litterText {
   @apply text-xl mt-20 relative text-white;
+}
+
+.factsSection {
+  background-image: url("img/leopard_print.jpg");
+  @apply h-screen w-screen relative flex object-contain  justify-around;
+}
+.catPicsWrapper {
+  @apply flex justify-start relative w-screen h-screen;
+}
+
+.catPics {
+  @apply absolute z-10 w-[50%] h-[400px] top-[20%] overflow-hidden;
+}
+
+.catPic {
+  @apply absolute w-[100%] h-[100%] top-0 left-0 overflow-hidden;
+}
+
+.catPic .slide {
+  @apply absolute w-[100%] h-[100%] left-0 bg-cover;
+  /* background: url("img/grace_bed.jpg"); */
+}
+.catPic.catPic1 {
+  z-index: 6;
+}
+.catPic.catPic1 .slide {
+  background: url("img/merlin_window.jpg");
+  @apply bg-center bg-cover;
+}
+.catPic.catPic2 {
+  z-index: 5;
+}
+.catPic.catPic2 .slide {
+  background: url("img/grace_couch.jpg");
+  @apply bg-left-top bg-cover;
+}
+.catPic.catPic3 {
+  z-index: 4;
+}
+.catPic.catPic3 .slide {
+  background: url("img/merlin_couch.jpg");
+  @apply bg-center bg-cover;
+}
+.catPic.catPic4  {
+  z-index: 3;
+}
+.catPic.catPic4 .slide {
+  background: url("img/willow_glasses.jpg");
+  @apply bg-center bg-cover;
+}
+.catPic.catPic5 {
+  z-index: 2;
+}
+.catPic.catPic5 .slide {
+  background: url("img/grace_tree.jpg");
+  @apply bg-left-top bg-cover;
+}
+.catPic.catPic6 {
+  z-index: 1;
+}
+.catPic.catPic6 .slide {
+  background: url("img/merlin_slipper.jpg");
+  @apply bg-center bg-cover;
+}
+
+.factsWrapper {
+  @apply absolute py-20 mx-40 top-0 left-[26rem];
+}
+
+.factsDiv {
+  @apply top-0 left-[26rem];
+}
+
+.factsDiv1 {
+  @apply bg-[#52FFFF];
+}
+.factsDiv2 {
+  @apply bg-[#44E9FF];
+}
+.factsDiv3 {
+  @apply bg-[#36D2F9];
+}
+.factsDiv4 {
+  @apply bg-[#2DBAEF];
+}
+.factsDiv5 {
+  @apply bg-[#2AA3E3];
+}
+.factsDiv6 {
+  @apply bg-[#288DD7];
 }

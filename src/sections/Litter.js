@@ -9,7 +9,7 @@ export const Litter = () => {
         trigger: ".litterSection",
         start: "top +=400 top",
         end: "bottom +=300 bottom",
-        markers: true,
+        // markers: true,
         scrub: true,
       },
     });
