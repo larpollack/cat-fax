@@ -95,7 +95,7 @@ background: linear-gradient(to right, #FF5CB3 0%, #30CF85 100%);
 }
 
 .catPics {
-  @apply absolute z-10 w-[50%] h-[400px] top-[20%] overflow-hidden;
+  @apply absolute z-10 w-[50%] h-[60%] top-[20%] overflow-hidden;
 }
 
 .catPic {
@@ -104,7 +104,6 @@ background: linear-gradient(to right, #FF5CB3 0%, #30CF85 100%);
 
 .catPic .slide {
   @apply absolute w-[100%] h-[100%] left-0 bg-cover;
-  /* background: url("img/grace_bed.jpg"); */
 }
 .catPic.catPic1 {
   z-index: 6;
@@ -150,28 +149,50 @@ background: linear-gradient(to right, #FF5CB3 0%, #30CF85 100%);
 }
 
 .factsWrapper {
-  @apply absolute py-20 mx-40 top-0 left-[26rem];
+  @apply left-[40rem] absolute z-10 w-[50%] h-[8rem] top-[10%] overflow-hidden rounded-md;
+  box-shadow: -6px 7px 2px 0px rgb(1, 73, 77);
+-webkit-box-shadow: -6px 7px 2px 0px rgb(1, 73, 77);
+-moz-box-shadow: -6px 7px 2px 0px rgb(1, 73, 77);;
+  
 }
 
 .factsDiv {
-  @apply top-0 left-[26rem];
+  @apply absolute rounded-md w-[100%] h-[100%] top-0 left-0 overflow-hidden;
 }
 
-.factsDiv1 {
+.factsDiv .factsText {
+  @apply absolute w-[100%] h-[100%] left-0 text-4xl mt-6 bg-cover;
+}
+
+.factsDiv.factsDiv1 {
   @apply bg-[#52FFFF];
+  z-index: 6;
 }
-.factsDiv2 {
+.factsDiv.factsDiv2 {
   @apply bg-[#44E9FF];
+  z-index: 5;
 }
-.factsDiv3 {
+.factsDiv.factsDiv3 {
   @apply bg-[#36D2F9];
+  z-index: 4;
 }
-.factsDiv4 {
+.factsDiv.factsDiv4 {
   @apply bg-[#2DBAEF];
+  z-index: 3;
 }
-.factsDiv5 {
+.factsDiv.factsDiv5 {
   @apply bg-[#2AA3E3];
+  z-index: 2;
 }
-.factsDiv6 {
+.factsDiv.factsDiv6 {
   @apply bg-[#288DD7];
+  z-index: 1;
+}
+
+.glassSection {
+  @apply h-screen w-screen relative bg-black;
+}
+
+.glassImg {
+  @apply absolute z-40 mx-[5%];
 }
