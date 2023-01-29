@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import { CatModel } from "./sections/CatModel";
+import { Footer } from "./sections/Footer";
 import { FunFacts } from "./sections/FunFacts";
 import { Glass } from "./sections/Glass";
 import { Hero } from "./sections/Hero";
@@ -18,6 +19,7 @@ function App() {
       <Window />
       <FunFacts />
       <Glass />
+      <Footer />
     </div>
   );
 }

@@ -20,26 +20,26 @@ export function Model(props) {
   // const action = actions["All Animations"];
 
   let camera = useThree((state) => state.camera);
+  let scenic = useThree((state) => state.scene);
 
   useLayoutEffect(() => {
     let t1 = gsap.timeline({
       scrollTrigger: {
         trigger: "#cat-model",
-        start: "top+=300 top",
-        markers: true,
-        end: "bottom +=1000 bottom",
-        endTrigger: "#glassSection",
+        start: "top top",
+        // markers: true,
+        end: "bottom bottom",
+        endTrigger: ".footerSection",
         scrub: true,
       },
     });
 
     t1.set(camera.position, { x: 1.2 })
       .fromTo(camera.position, { y: 3 }, { y: 0 })
-      .to(camera.position, { x: 0 })
-
       .to(camera.position, { x: -1.5 })
-      .to(camera.position, { x: -2.5 })
-      .to(camera.position, { x: 0 });
+      .to(scenic.rotation, { x: 0.8 })
+      .to(scenic.rotation, { x: 5 })
+      .to(camera.position, { x: 0.5 });
   }, []);
 
   useEffect(() => {

@@ -15,12 +15,12 @@ export const FunFacts = () => {
         },
         scrollTrigger: {
           trigger: ".factsSection",
-          start: "top top +=200",
-          end: "+=" + window.innerHeight + "+= 800",
+          start: "top top +=400",
+          end: "+=" + window.innerHeight * 2,
           pin: ".factsSection",
-          pinSpacer: false,
+          pinSpacer: true,
           scrub: true,
-          markers: true,
+          // markers: true,
         },
       }),
       mainTween: function (el) {},
@@ -31,25 +31,25 @@ export const FunFacts = () => {
       },
       setTl: function () {
         slider.mainTl
-          .to(".factsDiv.factsDiv1", { yPercent: -100 })
+          .to(".factsDiv.factsDiv1", { yPercent: 100 })
           .to(".catPic.catPic1", { yPercent: -100 })
           .to(".catPic.catPic1 > .slide", { yPercent: 100 }, ">-1")
           .to(".catPic.catPic2 > .slide", { scale: 1 }, ">-1")
           .to(".catPic.catPic2", { yPercent: -100 })
           .to(".catPic.catPic2 > .slide", { yPercent: 100 }, ">-1")
-          .to(".factsDiv.factsDiv2", { yPercent: -100 })
+          .to(".factsDiv.factsDiv2", { yPercent: 100 })
           .to(".catPic.catPic3 > .slide", { scale: 1 }, ">-1")
           .to(".catPic.catPic3", { yPercent: -100 })
           .to(".catPic.catPic3 > .slide", { yPercent: 100 }, ">-1")
-          .to(".factsDiv.factsDiv3", { yPercent: -100 })
+          .to(".factsDiv.factsDiv3", { yPercent: 100 })
           .to(".catPic.catPic4 > .slide", { scale: 1 }, ">-1")
           .to(".catPic.catPic4", { yPercent: -100 })
           .to(".catPic.catPic4 > .slide", { yPercent: 100 }, ">-1")
-          .to(".factsDiv.factsDiv4", { yPercent: -100 })
+          .to(".factsDiv.factsDiv4", { yPercent: 100 })
           .to(".catPic.catPic5 > .slide", { scale: 1 }, ">-1")
           .to(".catPic.catPic5", { yPercent: -100 })
           .to(".catPic.catPic5 > .slide", { yPercent: 100 }, ">-1")
-          .to(".factsDiv.factsDiv5", { yPercent: -100 })
+          .to(".factsDiv.factsDiv5", { yPercent: 100 })
           .to(".catPic.catPic6 > .slide", { scale: 1 }, ">-1");
       },
     };
