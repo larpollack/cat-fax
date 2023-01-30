@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   max-width: 100% !important;
-    overflow-x: hidden !important;
+  overflow-x: hidden !important;
 }
 
 .openingSection {
@@ -30,9 +30,8 @@
   @apply fixed z-10 top-0 w-screen h-screen bg-transparent;
 }
 
-
 .windowSection {
- @apply relative bg-black h-screen w-screen mb-[-15rem];
+  @apply relative bg-black h-screen w-screen mb-[-15rem];
 }
 
 .imgContainer {
@@ -60,26 +59,26 @@
 }
 .blinds-scrunch {
   max-width: 200%;
-  @apply  w-[1186px] h-[650px] left-[-290px] top-[-175px] absolute;
+  @apply w-[1186px] h-[650px] left-[-290px] top-[-175px] absolute;
 }
 
 .windowText {
   float: right;
   text-align: right;
-  
-@apply text-xl mt-40 leading-10 relative text-white;
+
+  @apply text-xl mt-40 leading-10 relative text-white;
 }
 
 .litterSection {
-  @apply h-[90vh] w-screen relative bg-black pt-40
+  @apply h-[90vh] w-screen relative bg-black pt-40;
 }
 
 .litterTitle {
-background: #FF5CB3;
-background: linear-gradient(to right, #FF5CB3 0%, #30CF85 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-@apply text-5xl font-bold;
+  background: #ff5cb3;
+  background: linear-gradient(to right, #ff5cb3 0%, #30cf85 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @apply text-5xl font-bold;
 }
 
 .litterText {
@@ -126,7 +125,7 @@ background: linear-gradient(to right, #FF5CB3 0%, #30CF85 100%);
   background: url("img/merlin_couch.jpg");
   @apply bg-center bg-cover;
 }
-.catPic.catPic4  {
+.catPic.catPic4 {
   z-index: 3;
 }
 .catPic.catPic4 .slide {
@@ -151,9 +150,8 @@ background: linear-gradient(to right, #FF5CB3 0%, #30CF85 100%);
 .factsWrapper {
   @apply left-[40rem] absolute z-10 w-[50%] h-[8rem] top-[10%] overflow-hidden rounded-md;
   box-shadow: -6px 7px 2px 0px rgb(1, 73, 77);
--webkit-box-shadow: -6px 7px 2px 0px rgb(1, 73, 77);
--moz-box-shadow: -6px 7px 2px 0px rgb(1, 73, 77);;
-  
+  -webkit-box-shadow: -6px 7px 2px 0px rgb(1, 73, 77);
+  -moz-box-shadow: -6px 7px 2px 0px rgb(1, 73, 77);
 }
 
 .factsDiv {
@@ -190,9 +188,51 @@ background: linear-gradient(to right, #FF5CB3 0%, #30CF85 100%);
 }
 
 .glassSection {
-  @apply h-screen w-screen relative bg-black;
+  @apply h-screen w-screen relative bg-[#161616];
+}
+.paws {
+  @apply relative h-screen w-screen top-[18%] left-[12%];
 }
 
 .glassImg {
-  @apply absolute z-50 m-[5%];
+  @apply absolute h-[90%] w-[90%] z-50 m-[5%];
+}
+
+.paw {
+  @apply absolute h-[30px] w-[auto] z-[100];
+  opacity: 0;
+}
+
+.paw.a {
+  @apply top-[60%] left-[18%];
+}
+
+.paw.b {
+  @apply top-[49%] left-[23%];
+}
+.paw.c {
+  @apply top-[39%] left-[17%];
+}
+.paw.d {
+  @apply top-[37%] left-[23%] rotate-[-20deg];
+}
+.paw.e {
+  @apply top-[28%] left-[17%] rotate-[-35deg];
+}
+.paw.f {
+  @apply top-[19%] left-[14%] rotate-[-70deg];
+}
+.paw.g {
+  @apply top-[20%] left-[8%] rotate-[-130deg];
+}
+.paw.h {
+  @apply top-[27%] left-[5%] rotate-[-145deg];
+}
+
+.footerSection {
+  @apply bg-[#161616] h-[20vh] w-screen;
+}
+
+.footerText {
+  @apply text-[#8899b5];
 }

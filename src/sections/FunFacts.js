@@ -15,7 +15,7 @@ export const FunFacts = () => {
         },
         scrollTrigger: {
           trigger: ".factsSection",
-          start: "top top +=400",
+          start: "top top +=200",
           end: "+=" + window.innerHeight * 2,
           pin: ".factsSection",
           pinSpacer: true,
@@ -31,6 +31,8 @@ export const FunFacts = () => {
       },
       setTl: function () {
         slider.mainTl
+          .fromTo(".catPicsWrapper", { autoAlpha: 0 }, { autoAlpha: 1 })
+          .fromTo(".factsWrapper", { autoAlpha: 0 }, { autoAlpha: 1 })
           .to(".factsDiv.factsDiv1", { yPercent: 100 })
           .to(".catPic.catPic1", { yPercent: -100 })
           .to(".catPic.catPic1 > .slide", { yPercent: 100 }, ">-1")
