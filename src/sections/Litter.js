@@ -23,12 +23,9 @@ export const Litter = () => {
   return (
     <div className="litterSection">
       <div className="litterTitle">
-        This is my litter box.
-        <br />
-        There are many like it,
-        <br />
-        but this one is mine.
-      </div>
+        This is my litter box.<br />
+        There are many like it,<br />
+        but this one is mine.</div>
       <div className="litterText">
         My litter box is my best friend.
         <br />

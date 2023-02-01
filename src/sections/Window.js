@@ -24,7 +24,7 @@ export const Window = () => {
       {
         duration: 4,
         scaleY: 0.2,
-        y: "-=50",
+        y: "-=110",
         rotation: 0.01,
         force3D: false,
       },
@@ -34,7 +34,7 @@ export const Window = () => {
         ".blinds-scrunch",
         {
           duration: 4,
-          y: "-=230",
+          y: "-=280",
           rotation: 0.01,
           force3D: false,
         },

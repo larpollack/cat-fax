@@ -119,15 +119,16 @@ background: linear-gradient(45deg, rgba(245,151,63,1) 0%, rgba(47,6,97,1) 100%);
 }
 
 .litterTitle {
-  background: #ff5cb3;
-  background: linear-gradient(to right, #ff5cb3 0%, #30cf85 100%);
+  background: #6800CF;
+  background: linear-gradient(to right, #4c00cf 10%, #fda21b 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  
   @apply text-5xl font-bold;
 }
 
 .litterText {
-  @apply text-xl mt-20 relative text-white;
+  @apply text-xl mt-20 relative text-[#fda21b];
 }
 
 .factsSection {
