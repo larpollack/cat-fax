@@ -10,7 +10,7 @@ export const Opening = () => {
   useLayoutEffect(() => {
     let elem = sectionRef.current;
     gsap.fromTo(
-      ".quote",
+      ".quoteWrapper",
       { xPercent: 30 },
       { duration: 3, xPercent: 0, ease: "bounce" }
     );
@@ -27,12 +27,16 @@ export const Opening = () => {
     };
   }, []);
   return (
-    <div ref={sectionRef} className="openingSection">
-      <div className="quote">
-        In ancient times cats <br />
-        were worshipped as gods. <br />
-        They have not forgotten this.
+    <><div ref={sectionRef} className="openingSection">
+      <div className="quoteWrapper">
+        <div className="quote">
+          In ancient times cats <br />
+          were worshipped as gods. <br />
+          They have not forgotten this.
+        </div>
       </div>
+    <div className="circle1"></div><div className="circle2"></div>
     </div>
+    </>
   );
 };
