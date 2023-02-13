@@ -6,7 +6,7 @@
 
 .openingSection {
   background: rgb(245,151,63);
-background: linear-gradient(45deg, rgba(245,151,63,1) 0%, rgba(47,6,97,1) 100%);
+background: linear-gradient(165deg, rgba(245,151,63,1) 0%, rgba(47,6,97,1) 50%, rgba(0,0,0,1) 100%);
   @apply w-screen h-screen py-80 z-0 flex justify-center items-center relative;
 }
 
@@ -129,6 +129,7 @@ background: linear-gradient(45deg, rgba(245,151,63,1) 0%, rgba(47,6,97,1) 100%);
 
 .litterText {
   @apply text-xl mt-20 relative text-[#fda21b];
+  opacity: 0;
 }
 
 .factsSection {
