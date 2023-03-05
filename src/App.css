@@ -7,7 +7,7 @@
 .openingSection {
   background: rgb(245,151,63);
 background: linear-gradient(165deg, rgba(245,151,63,1) 0%, rgba(47,6,97,1) 50%, rgba(0,0,0,1) 100%);
-  @apply w-screen h-screen py-80 z-0 flex justify-center items-center relative;
+  @apply w-screen h-screen items-center  lg:py-80 z-0 flex justify-center  relative;
 }
 
 .quoteWrapper {
@@ -19,13 +19,13 @@ background: linear-gradient(165deg, rgba(245,151,63,1) 0%, rgba(47,6,97,1) 50%, 
     );
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(1rem);
-    @apply w-[60%] h-[90%] z-[1] flex justify-center items-center rounded-[5rem];
+    @apply w-[83%] h-[auto]  lg:w-[60%]  z-[1] flex justify-center items-center rounded-[4rem];
 }
 
 
 .quote {
   text-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-  @apply text-white italic text-6xl border-solid h-[18rem] w-[52rem] p-10 mx-auto;
+  @apply text-white italic text-xl md:text-4xl lg:text-5xl border-solid lg:h-[16rem] lg:w-[52rem] p-10 mx-auto;
 }
 
 .circle1,
@@ -36,22 +36,17 @@ background: linear-gradient(165deg, rgba(245,151,63,1) 0%, rgba(47,6,97,1) 50%, 
         rgba(255, 255, 255, 0.9),
         rgba(255, 255, 255, 0.1)
     );
-    height: 20rem;
-    width: 20rem;
-    position: absolute;
-    border-radius: 50%;
+    @apply h-[6rem] w-[6rem] md:h-[10rem] md:w-[10rem] lg:h-[20rem] lg:w-[20rem] absolute rounded-[50%];
 }
 
 .circle1 {
-    top: 20%;
-    left: 10%;
     transform: translate(-10%, -10%);
+    @apply top-[38%] left-[3%] lg:top-[20%] lg:left-[10%];
 }
 
 .circle2 {
-    top: 70%;
-    left: 80%;
     transform: translate(-50%, -50%);
+    @apply top-[58%] left-[84%] lg:top-[70%] lg:left-[80%];
 }
 
 .heroSection {
@@ -62,13 +57,12 @@ background: linear-gradient(165deg, rgba(245,151,63,1) 0%, rgba(47,6,97,1) 50%, 
 }
 
 .vidText {
-  @apply text-white text-5xl font-bold absolute top-[26rem] w-[100%] -rotate-[30deg];
+  @apply text-white text-3xl md:text-5xl font-bold absolute top-[20rem] md:top-[26rem] w-[100%] -rotate-[30deg];
 }
 
 .smokeVid {
   @apply w-[100%] h-screen object-cover object-bottom;
 }
-
 
 
 .modelContainer {
@@ -91,27 +85,27 @@ background: linear-gradient(165deg, rgba(245,151,63,1) 0%, rgba(47,6,97,1) 50%, 
 }
 
 .cat-standing {
-  @apply w-[200px] h-auto absolute top-[331px] left-[175px] overflow-hidden;
+  @apply w-[110px] md:w-[200px] h-auto absolute top-[240px] md:top-[331px] left-[143px] md:left-[175px] overflow-hidden;
 }
 
 .black-block {
-  @apply w-[200px] h-[265px] absolute top-[340px] left-[164px] bg-black;
+  @apply w-[200px] h-[265px] absolute top-[233px] left-[143px] md:top-[340px] md:left-[164px] bg-black;
 }
 
 .blinds {
   max-width: 200%;
-  @apply w-[1186px] h-[650px] left-[-290px] top-[-175px] absolute;
+  @apply w-[1186px] h-[460px] md:h-[650px] left-[-203px] md:left-[-290px] top-[-132px] md:top-[-175px] absolute;
 }
 .blinds-scrunch {
   max-width: 200%;
-  @apply w-[1186px] h-[650px] left-[-290px] top-[-175px] absolute;
+  @apply w-[1186px] h-[623px] md:h-[650px] left-[-203px] md:left-[-290px] top-[-277px] md:top-[-175px] absolute;
 }
 
 .windowText {
   float: right;
   text-align: right;
 
-  @apply text-2xl mt-40 leading-10 relative text-[#fda21b];
+  @apply top-[10rem] lg:top-0 text-2xl mt-40 leading-10 relative text-[#fda21b];
 }
 
 .litterSection {
@@ -124,7 +118,7 @@ background: linear-gradient(165deg, rgba(245,151,63,1) 0%, rgba(47,6,97,1) 50%, 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   
-  @apply text-5xl font-bold;
+  @apply text-3xl md:text-5xl font-bold;
 }
 
 .litterText {
@@ -141,7 +135,7 @@ background: linear-gradient(165deg, rgba(245,151,63,1) 0%, rgba(47,6,97,1) 50%, 
 }
 
 .catPics {
-  @apply absolute z-10 w-[50%] h-[60%] top-[20%] overflow-hidden;
+  @apply absolute z-10 w-[60%] h-[21%] top-[41%] left-[2%] md:w-[50%] md:h-[60%] md:top-[20%] md:left-[0] overflow-hidden;
 }
 
 .catPic {
@@ -195,7 +189,7 @@ background: linear-gradient(165deg, rgba(245,151,63,1) 0%, rgba(47,6,97,1) 50%, 
 }
 
 .factsWrapper {
-  @apply left-[40rem] absolute z-10 w-[50%] h-[8rem] top-[10%] overflow-hidden rounded-md;
+  @apply left-[5rem] top-[19%] h-[8rem] w-[78%] md:left-[20rem] lg:left-[40rem] absolute z-10 md:w-[50%] lg:h-[8rem] md:top-[10%] overflow-hidden rounded-md;
   box-shadow: -6px 7px 2px 0px rgb(58, 42, 62);
   -webkit-box-shadow: -6px 7px 2px 0px rgb(58, 42, 62);
   -moz-box-shadow: -6px 7px 2px 0px rgb(58, 42, 62);
@@ -206,7 +200,7 @@ background: linear-gradient(165deg, rgba(245,151,63,1) 0%, rgba(47,6,97,1) 50%, 
 }
 
 .factsDiv .factsText {
-  @apply absolute w-[100%] h-[100%] left-0 text-4xl mt-6 bg-cover;
+  @apply absolute w-[100%] h-[100%] left-0 text-xl md:text-2xl lg:text-4xl mt-6 bg-cover;
 }
 
 .factsDiv.factsDiv1 {

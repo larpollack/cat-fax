@@ -10,6 +10,19 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 export const Window = () => {
   useLayoutEffect(() => {
+    let mm = gsap.matchMedia();
+  
+    mm.add({
+    
+      // set up any number of arbitrarily-named conditions. The function below will be called when ANY of them match.
+      isDesktop: `(min-width: 48em)`,
+      
+    
+    }, (context) => {
+    
+      // context.conditions has a boolean property for each condition defined above indicating if it's matched or not.
+      let { isDesktop } = context.conditions;
+    
     let t1 = gsap.timeline({
       scrollTrigger: {
         trigger: ".windowSection",
@@ -24,7 +37,7 @@ export const Window = () => {
       {
         duration: 4,
         scaleY: 0.2,
-        y: "-=110",
+        y: isDesktop ? "-=110" : "-=70",
         rotation: 0.01,
         force3D: false,
       },
@@ -34,7 +47,7 @@ export const Window = () => {
         ".blinds-scrunch",
         {
           duration: 4,
-          y: "-=280",
+          y: isDesktop ? "-=280" : "-=210",
           rotation: 0.01,
           force3D: false,
         },
@@ -64,7 +77,9 @@ export const Window = () => {
     return () => {
       if (t1) t1.kill();
     };
+  })
   }, []);
+  
 
   return (
     <div className="windowSection">

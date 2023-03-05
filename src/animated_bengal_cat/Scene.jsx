@@ -33,14 +33,33 @@ export function Model(props) {
         scrub: true,
       },
     });
+    let mm = gsap.matchMedia();
+  
+    mm.add({
+    
+      // set up any number of arbitrarily-named conditions. The function below will be called when ANY of them match.
+      isDesktop: `(min-width: 48em)`,
+      isMobile: `(max-width:820px)`,
+      
+    
+    }, (context) => {
+    
+      // context.conditions has a boolean property for each condition defined above indicating if it's matched or not.
+      let { isDesktop, isMobile } = context.conditions;
+      if(isMobile){
+        camera.fov = 40;
+  camera.updateProjectionMatrix();
+      }
+   
 
-    t1.set(camera.position, { x: 1.2 })
+    t1.set(camera.position, { x: isDesktop ? 1.2 : 1})
       .fromTo(camera.position, { y: 3 }, { y: 0 })
-      .to(camera.position, { x: -1.5 })
+      .to(camera.position, { x: isDesktop ? -1.5 : -0.8})
       .to(scenic.rotation, { x: 0.8 })
       .to(scenic.rotation, { x: 5 })
       .to(camera.position, { x: 0.5 });
   }, []);
+})
 
   useEffect(() => {
     actions["All Animations"].play();

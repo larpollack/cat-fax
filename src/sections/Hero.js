@@ -5,6 +5,18 @@ import gsap from "gsap";
 
 export const Hero = () => {
   useLayoutEffect(() => {
+    let mm = gsap.matchMedia();
+  
+    mm.add({
+    
+      // set up any number of arbitrarily-named conditions. The function below will be called when ANY of them match.
+      isDesktop: `(min-width: 48em)`,
+      
+    
+    }, (context) => {
+    
+      // context.conditions has a boolean property for each condition defined above indicating if it's matched or not.
+      let { isDesktop } = context.conditions;
     let t1 = gsap.timeline({
       scrollTrigger: {
         trigger: ".vidContainer",
@@ -15,17 +27,18 @@ export const Hero = () => {
       },
     });
     t1.to(".vt1", {
-      x: "-=150",
+      x: isDesktop ? "-=150" : "-=100",
       rotation: 0.01,
       force3D: false,
     }).to(".vt2", {
-      x: "+=150",
+      x: isDesktop ? "+=150" : "+=100",
       rotation: 0.01,
       force3D: false,
     });
     return () => {
       if (t1) t1.kill();
     };
+  })
   }, []);
   return (
     <div className="heroSection">
