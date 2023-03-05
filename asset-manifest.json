@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/cat-fax/static/css/main.2f02db0d.css",
+    "main.js": "/cat-fax/static/js/main.a6ff0958.js",
+    "static/js/787.a706e2b4.chunk.js": "/cat-fax/static/js/787.a706e2b4.chunk.js",
+    "static/media/smoke.mp4": "/cat-fax/static/media/smoke.22c4a2fff683fc25e52e.mp4",
+    "static/media/grace_couch.jpg": "/cat-fax/static/media/grace_couch.d18a075599b8042329b2.jpg",
+    "static/media/openwindow_transparent.png": "/cat-fax/static/media/openwindow_transparent.4165191199afaaa5a2e9.png",
+    "static/media/willow_glasses.jpg": "/cat-fax/static/media/willow_glasses.967d68c4680f797fcf82.jpg",
+    "static/media/merlin_window.jpg": "/cat-fax/static/media/merlin_window.7dae269cd5c0f3c963bc.jpg",
+    "static/media/merlin_slipper.jpg": "/cat-fax/static/media/merlin_slipper.4ba8e1d7619e09c7ba64.jpg",
+    "static/media/merlin_couch.jpg": "/cat-fax/static/media/merlin_couch.33cef0d608586ed83283.jpg",
+    "static/media/paw.png": "/cat-fax/static/media/paw.98de98766e1360490c5e.png",
+    "static/media/grace_tree.jpg": "/cat-fax/static/media/grace_tree.a6fa4ed69d89c06cf240.jpg",
+    "static/media/openwindow_bg.jpg": "/cat-fax/static/media/openwindow_bg.1370c367b1527d5ef324.jpg",
+    "static/media/cat_standing.png": "/cat-fax/static/media/cat_standing.38d9efc5e5ad6580ad33.png",
+    "static/media/glass.png": "/cat-fax/static/media/glass.04fc31dfc5d14f212630.png",
+    "static/media/blinds.png": "/cat-fax/static/media/blinds.dc87b440dc1ce8ab38b2.png",
+    "static/media/leopard_print.jpg": "/cat-fax/static/media/leopard_print.9dc0d5e3e90241692389.jpg",
+    "static/media/blinds_scrunch.png": "/cat-fax/static/media/blinds_scrunch.b3f56f52ef3b9b4aefb4.png",
+    "index.html": "/cat-fax/index.html",
+    "main.2f02db0d.css.map": "/cat-fax/static/css/main.2f02db0d.css.map",
+    "main.a6ff0958.js.map": "/cat-fax/static/js/main.a6ff0958.js.map",
+    "787.a706e2b4.chunk.js.map": "/cat-fax/static/js/787.a706e2b4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f02db0d.css",
+    "static/js/main.a6ff0958.js"
+  ]
+}
