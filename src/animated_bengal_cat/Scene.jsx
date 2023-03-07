@@ -12,10 +12,11 @@ import { useGLTF, useAnimations } from "@react-three/drei";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useThree } from "@react-three/fiber";
+import sceneUrl from './scene.glb'
 
 export function Model(props) {
   const group = useRef();
-  const { scene, nodes, materials, animations } = useGLTF("/scene.glb", true);
+  const { scene, nodes, materials, animations } = useGLTF(sceneUrl, true);
   const { actions, mixer } = useAnimations(animations, group);
   // const action = actions["All Animations"];
 
@@ -120,4 +121,4 @@ export function Model(props) {
   );
 }
 
-useGLTF.preload("/scene.glb");
+useGLTF.preload(sceneUrl);
