@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/cat-fax/static/css/main.2f02db0d.css",
-    "main.js": "/cat-fax/static/js/main.4f08b987.js",
+    "main.js": "/cat-fax/static/js/main.effe0da7.js",
     "static/js/787.a706e2b4.chunk.js": "/cat-fax/static/js/787.a706e2b4.chunk.js",
     "static/media/smoke.mp4": "/cat-fax/static/media/smoke.22c4a2fff683fc25e52e.mp4",
+    "static/media/scene.glb": "/cat-fax/static/media/scene.926d45e32c8866e505b7.glb",
     "static/media/grace_couch.jpg": "/cat-fax/static/media/grace_couch.d18a075599b8042329b2.jpg",
     "static/media/openwindow_transparent.png": "/cat-fax/static/media/openwindow_transparent.4165191199afaaa5a2e9.png",
     "static/media/willow_glasses.jpg": "/cat-fax/static/media/willow_glasses.967d68c4680f797fcf82.jpg",
@@ -20,11 +21,11 @@
     "static/media/blinds_scrunch.png": "/cat-fax/static/media/blinds_scrunch.b3f56f52ef3b9b4aefb4.png",
     "index.html": "/cat-fax/index.html",
     "main.2f02db0d.css.map": "/cat-fax/static/css/main.2f02db0d.css.map",
-    "main.4f08b987.js.map": "/cat-fax/static/js/main.4f08b987.js.map",
+    "main.effe0da7.js.map": "/cat-fax/static/js/main.effe0da7.js.map",
     "787.a706e2b4.chunk.js.map": "/cat-fax/static/js/787.a706e2b4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2f02db0d.css",
-    "static/js/main.4f08b987.js"
+    "static/js/main.effe0da7.js"
   ]
 }
