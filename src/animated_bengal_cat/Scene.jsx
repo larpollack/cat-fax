@@ -15,7 +15,7 @@ import { useThree } from "@react-three/fiber";
 
 export function Model(props) {
   const group = useRef();
-  const { scene, nodes, materials, animations } = useGLTF("/scene.gltf", true);
+  const { scene, nodes, materials, animations } = useGLTF("/scene.glb", true);
   const { actions, mixer } = useAnimations(animations, group);
   // const action = actions["All Animations"];
 
@@ -120,4 +120,4 @@ export function Model(props) {
   );
 }
 
-useGLTF.preload("/scene.gltf");
+useGLTF.preload("/scene.glb");
