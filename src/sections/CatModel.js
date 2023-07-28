@@ -13,8 +13,6 @@ export const CatModel = () => {
         <Suspense fallback={null}>
           <Model />
         </Suspense>
-        <Environment preset="sunset" />
-        {/* <OrbitControls /> */}
       </Canvas>
     </div>
   );
